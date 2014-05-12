@@ -185,6 +185,12 @@ var olipCommon =
                 var urlRegEx = /^htt(p|ps):\/\/(.*?)\//;
                 //alert("[" + olipCommon.prefs.getCharPref("olipURLFilter") + " ]apply it on : [" + currentURL + "]");
                 var result = url.match(urlRegEx);
+                
+                if ( null == result )
+                {
+                    return null;
+                }
+                
                 return result[2];
             },
             
