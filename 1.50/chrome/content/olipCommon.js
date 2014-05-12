@@ -114,7 +114,7 @@ var olipCommon =
                         olipCommon.ShowAppLaunchErrorMessage(err);
                         return true;
                 }
-                var args = ["load", url];
+                var args = [url];
                 
                 try
                 {
